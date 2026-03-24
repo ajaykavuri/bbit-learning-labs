@@ -41,7 +41,7 @@ class mqConsumer(mqConsumerInterface):
         print("[*] Waiting for messages. To exit press CTRL+C")
         
 
-        self.channel.start_consuming
+        self.channel.start_consuming()
         
     
     def __del__(self) -> None:
